@@ -148,22 +148,7 @@ header .input-section {
     top: 16px;
     right: 16px;
 }
-a{
-    background-color: yellow;
-    position: absolute;
-    top: 5%;
-    left: 3%;
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: #5a78ff;
-    align-items: center;
-    padding: 14px 25px;
-    color: white;
-    text-decoration: solid;
-   
-}
+
 
 /* Responsive */
 @media only screen and (max-width: 530px) {
