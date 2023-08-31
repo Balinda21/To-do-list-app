@@ -14,6 +14,8 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
+
 //get random unique id
 function getRandomId() {
   return (
@@ -32,6 +34,7 @@ function addToDo(task_input, date_input) {
   };
   todos.push(task);
 }
+
 
 task_input.addEventListener("keyup", (e) => {
   if (e.keyCode === 13 && task_input.value.length > 0) {
