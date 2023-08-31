@@ -6,7 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-image: url("blog-post-6");
+    background-image: var("blog-post-6");
+    
 }
 
 :root {
@@ -21,6 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color:rgb(80, 76, 76);
+    
 }
 
 .author-text{

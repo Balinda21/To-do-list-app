@@ -31,8 +31,12 @@ function addToDo(task_input, date_input) {
     dueDate: date_input.value, // added due date
     completed: false,
     status: "pending", // adding initial status as 'pending'
+    
   };
   todos.push(task);
+
+
+  
 }
 
 
@@ -73,17 +77,13 @@ function showAllTodos() {
             <tr class="todo-item" data-id="${todo.id}">
                 <td>${todo.task}</td>
                 <td>${todo.dueDate || "No due date"}</td>
-                <td>${todo.status}</td>
                 <td>
                     <button class="btn btn-warning btn-sm" onclick="editTodo('${
                       todo.id
                     }')">
                         <i class="bx bx-edit-alt bx-bx-xs"></i>    
                     </button>
-                    <button class="btn btn-success btn-sm" onclick="toggleStatus('${
-                      todo.id
-                    }')">
-                        <i class="bx bx-check bx-xs"></i>
+                        
                     </button>
                     <button class="btn btn-error btn-sm" onclick="deleteTodo('${
                       todo.id
@@ -188,18 +188,14 @@ function displayTodos(todosArray) {
             <tr class="todo-item" data-id="${todo.id}">
                 <td>${todo.task}</td>
                 <td>${todo.dueDate || "No due date"}</td>
-                <td>${todo.status}</td>
+               
                 <td>
                     <button class="btn btn-warning btn-sm" onclick="editTodo('${
                       todo.id
                     }')">
                         <i class="bx bx-edit-alt bx-bx-xs"></i>    
                     </button>
-                    <button class="btn btn-success btn-sm" onclick="toggleStatus('${
-                      todo.id
-                    }')">
-                        <i class="bx bx-check bx-xs"></i>
-                    </button>
+                  
                     <button class="btn btn-error btn-sm" onclick="deleteTodo('${
                       todo.id
                     }')">
